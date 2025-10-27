@@ -1,0 +1,18 @@
+{
+  "monthly_expected_revenue": 5000.0,
+  "expense_class_percentages": {
+    "Lazer": 10.0,
+    "Limpeza": 3.0,
+    "Roupas": 8.0,
+    "Lavanderia": 2.0,
+    "Mercado": 25.0,
+    "Casa": 10.0,
+    "Restaurante": 15.0,
+    "Aluguel": 20.0,
+    "Luz": 3.0,
+    "Internet": 2.0,
+    "Farmácia": 2.0,
+    "Carro": 0.0
+  },
+  "last_updated": "2025-10-26T21:07:34.324606"
+}

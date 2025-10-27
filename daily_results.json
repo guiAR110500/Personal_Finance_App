@@ -1,0 +1,53 @@
+{
+  "daily_expenses": [
+    {
+      "date": "2025-10-26",
+      "expenses": [
+        {
+          "Data": "2025-10-26 00:00:00",
+          "Title": "Compra de Produtos de Beleza com Desconto",
+          "Value": 826.78,
+          "Description": "Compra realizada em 26 de outubro de 14 produtos, possivelmente cosméticos ou perfumes, com valor total de R$826,78, incluindo desconto à vista de R$79,95 e frete de R$15,99. Pagamento aprovado com cartão Mastercard final 2799.",
+          "Class": "Casa",
+          "Fixed Expense": "FALSE",
+          "Month": "2025-10"
+        },
+        {
+          "Data": "2025-10-26 00:00:00",
+          "Title": "Compra de Cabides",
+          "Value": 30.79,
+          "Description": "Compra realizada em 26 de outubro, totalizando R$30,79 após desconto de R$9,20 no valor original de R$39,99, com frete grátis. Produto específico não especificado, categorizado em Casa conforme solicitação.",
+          "Class": "Casa",
+          "Fixed Expense": "FALSE",
+          "Month": "2025-10"
+        },
+        {
+          "Data": "2025-10-26 00:00:00",
+          "Title": "Compra de Pés de Cama",
+          "Value": 106.88,
+          "Description": "Compra realizada em 26 de outubro de 2 itens para móveis e decoração, totalizando R$118,89 com desconto à vista de R$31,99 e frete incluído de R$19,98, resultado em valor final de R$106,88. Pagamento aprovado via cartão Mastercard.",
+          "Class": "Casa",
+          "Fixed Expense": "FALSE",
+          "Month": "2025-10"
+        }
+      ],
+      "total_by_class": {
+        "Lazer": 0.0,
+        "Limpeza": 0.0,
+        "Roupas": 0.0,
+        "Lavanderia": 0.0,
+        "Mercado": 0.0,
+        "Casa": 964.4499999999999,
+        "Restaurante": 0.0,
+        "Aluguel": 0.0,
+        "Luz": 0.0,
+        "Internet": 0.0,
+        "Farmácia": 0.0,
+        "Carro": 0.0
+      },
+      "total_amount": 964.4499999999999,
+      "timestamp": "2025-10-26T21:46:41.192174"
+    }
+  ],
+  "monthly_summaries": []
+}

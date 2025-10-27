@@ -1,0 +1,17 @@
+[project]
+name = "personal-finance-app"
+version = "0.1.0"
+description = "Personal Finance Application"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "charts>=0.4.6",
+    "google-api-python-client>=2.185.0",
+    "google-auth-httplib2>=0.2.0",
+    "google-auth-oauthlib>=1.2.2",
+    "gspread>=6.2.1",
+    "pandas>=2.3.3",
+    "plotly>=6.3.1",
+    "streamlit>=1.50.0",
+    "streamlit-autorefresh>=1.0.1",
+]
