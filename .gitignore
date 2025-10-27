@@ -8,3 +8,24 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Sensitive credentials and configuration
+credentials.json
+*.json
+
+# Database files
+user_settings.json
+daily_results.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
