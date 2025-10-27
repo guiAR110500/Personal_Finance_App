@@ -1,12 +1,42 @@
 import gspread
 import pandas as pd
+import streamlit as st
 from google.oauth2.service_account import Credentials
 from database import finance_db
 from datetime import datetime, date
 
 # Google Sheets auth
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-creds = Credentials.from_service_account_file("credentials.json", scopes=scopes)
+
+def get_google_credentials():
+    """Get Google credentials from Streamlit secrets or fallback to local file"""
+    try:
+        # Try to get credentials from Streamlit secrets
+        google_creds = st.secrets["google_credentials"]
+        
+        # Convert to dict format for Google API
+        creds_dict = {
+            "type": google_creds["type"],
+            "project_id": google_creds["project_id"],
+            "private_key_id": google_creds["private_key_id"],
+            "private_key": google_creds["private_key"],
+            "client_email": google_creds["client_email"],
+            "client_id": google_creds["client_id"],
+            "auth_uri": google_creds["auth_uri"],
+            "token_uri": google_creds["token_uri"],
+            "auth_provider_x509_cert_url": google_creds["auth_provider_x509_cert_url"],
+            "client_x509_cert_url": google_creds["client_x509_cert_url"],
+            "universe_domain": google_creds["universe_domain"]
+        }
+        
+        return Credentials.from_service_account_info(creds_dict, scopes=scopes)
+        
+    except Exception as e:
+        # Fallback to local credentials file for development
+        print(f"Using local credentials file (Streamlit secrets not available): {e}")
+        return Credentials.from_service_account_file("credentials.json", scopes=scopes)
+
+creds = get_google_credentials()
 client = gspread.authorize(creds)
 
 # Open sheet

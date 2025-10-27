@@ -12,6 +12,7 @@ wheels/
 # Sensitive credentials and configuration
 credentials.json
 *.json
+.streamlit/secrets.toml
 
 # Database files
 user_settings.json
